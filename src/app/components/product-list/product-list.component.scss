@@ -1,0 +1,34 @@
+::ng-deep app-product-list .app-product-list {
+
+    .content {
+        max-height: calc(90vh);
+        overflow: auto;
+    }
+
+    .product-card {
+        max-width: 400px;
+        background: #efefef;
+        max-height: 320px;
+    }
+
+    .product-header-image {
+        background-image: url('./../../../assets/icons/logo.png');
+        background-size: cover;
+    }
+
+    .cart-page-button {
+        text-align: center;
+
+        button {
+            width: 25%;
+        }
+    }
+
+    .card-actions {
+        .mat-mdc-form-field {
+            width: 50%;
+            margin-right: 12px;
+        }
+    }
+
+}

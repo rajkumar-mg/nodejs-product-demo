@@ -1,0 +1,46 @@
+{
+  "inventory": [
+    {
+      "productName": "Laptop",
+      "category": "electronics",
+      "quantity": 65,
+      "price": 50000
+    },
+    {
+      "productName": "Mobile",
+      "category": "electronics",
+      "quantity": 34,
+      "price": 10000
+    },
+    {
+      "productName": "Smart Watch",
+      "category": "electronics",
+      "quantity": 90,
+      "price": 5000
+    },
+    {
+      "productName": "T-Shirt",
+      "category": "cloths",
+      "quantity": 23,
+      "price": 500
+    },
+    {
+      "productName": "Travel Bag",
+      "category": "luggage",
+      "quantity": 36,
+      "price": 2000
+    },
+    {
+      "productName": "Shoes",
+      "category": "lifestyle",
+      "quantity": 0,
+      "price": 699
+    },
+    {
+      "productName": "Sun Glass",
+      "category": "lifestyle",
+      "quantity": 0,
+      "price": 499
+    }
+  ]
+}
