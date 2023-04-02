@@ -4,18 +4,18 @@
 * This is created to describe the basic functionality for NodeJS and its routing.
 
 # Dependices
-** Angular CLI 15.2.4 **
-** Node 16.19.1
-** NPM 8.19.3 **
+* Angular CLI 15.2.4.
+* Node 16.19.1.
+* NPM 8.19.3.
 
 # Configuration and Scripts
-** Angular and NodeJS was compined on single application **
-** node-api folder have NodeJS Codes **
-** Written separate npm script to run NodeJS project - 'npm run serve-api' **
-** Used default npm script to run Angular Project - 'npm run serve' **
-** To run both projects written custom script - 'npm run start' **
-** Use http://localhost:4200/ to check the Angular. **
-** Use http://localhost:3030/ to check the NodeJS. **
+* Angular and NodeJS was compined on single application.
+* node-api folder have NodeJS Codes.
+* Written separate npm script to run NodeJS project - 'npm run serve-api'.
+* Used default npm script to run Angular Project - 'npm run serve'.
+* To run both projects written custom script - 'npm run start'.
+* Use http://localhost:4200/ to check the Angular.
+* Use http://localhost:3030/ to check the NodeJS.
 
 # Angular
 * The Angular project have two components. 
