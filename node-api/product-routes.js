@@ -11,10 +11,10 @@ class ProductRoutes {
     productRouter.get("/products", async (req, res, next) => {
       try {
         const products = await ProductService.getAllProducts();
-        res.status(200).send({ products })
+        res.status(200).send(products)
       } catch (error) {
         next(error);
-        res.status(402).send(error.message);
+        res.status(400).send(error.message);
       }
     })
 
@@ -26,7 +26,7 @@ class ProductRoutes {
         res.status(200).send(product)
       } catch (error) {
         next(error);
-        res.status(402).send(error.message);
+        res.status(400).send(error.message);
       }
     })
 

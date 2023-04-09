@@ -1,17 +1,27 @@
 const path = require("path");
-const inventoryData = require(path.resolve(__dirname, "inventory.json"));
+const Product = require("../models/product-models");
+const { SecurityError } = require("../erro-types");
 
 class ProductService {
 
   ProductService() { }
 
   static async getAllProducts() {
-    return inventoryData.inventory;
+    try {
+      const products = await Product.find({});
+      return products;
+    } catch (e) {
+      throw new SecurityError(e);
+    }
   }
 
   static async getProduct(name) {
-    const inventory = inventoryData.inventory;
-    return inventory.find(x => x.productName === name);
+    try {
+      const product = await Product.find({ productName: name });
+      return product;
+    } catch (e) {
+      throw new SecurityError("Invalid Product!");
+    }
   }
 
 }

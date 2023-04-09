@@ -6,6 +6,7 @@ const { logRequest, logError } = require('./logger');
 const ProductRoutes = require("./product-routes");
 const CartRoutes = require("./cart-routes");
 const apiRoutes = express.Router();
+const initDBSetup = require("./database/db-connect");
 
 const app = express();
 const port = process.env.PORT || 3030;
@@ -19,6 +20,8 @@ ProductRoutes.setup(apiRoutes);
 CartRoutes.setup(apiRoutes);
 
 app.use("/api", apiRoutes);
+
+initDBSetup();
 
 app.get("/", (req, res) => {
   res.send("Welcome to product server 1.0.0");

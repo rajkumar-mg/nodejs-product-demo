@@ -28,7 +28,7 @@ export class ProductListComponent implements OnInit, OnDestroy {
 
   public getProductsList(): void {
     this.apiService.getProducList().pipe(takeUntil(this.unSub$)).subscribe((res: any) => {
-      this.productList = res?.products ?? [];
+      this.productList = Array.isArray(res) ? res : [];
     });
   }
 

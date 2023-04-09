@@ -10,22 +10,21 @@ class CartRoutes {
     cartRouter.post("/purchase", async (req, res, next) => {
       try {
         const { body } = req;
-        const success = await CartService.purchase(body);
-        if (success) {
+        const result = await CartService.purchase(body);
+        if (result?._id) {
           res.status(200).send({ success: true, message: 'Product successfully purchased' });
         } else {
           res.status(200).send({ success: false, message: 'Unkown Error!' });
         }
       } catch (error) {
-        res.status(200).send({ success: false, message: error.message });
+        res.status(400).send(error.message);
         next(error);
       }
-    })
+    });
 
     root.use(cartRouter);
   }
 
 }
-
 
 module.exports = CartRoutes;

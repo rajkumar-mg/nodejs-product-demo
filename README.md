@@ -16,6 +16,8 @@
 * To run both projects written custom script - 'npm run start'.
 * Use http://localhost:4200/ to check the Angular.
 * Use http://localhost:3030/ to check the NodeJS.
+* Install and Do basic configuration for MongoDB Environment
+* Use node-api/db-data/product.json file to add data on DB to see list of products.
 
 # Angular
 * The Angular project have two components. 

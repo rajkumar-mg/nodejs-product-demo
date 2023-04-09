@@ -44,6 +44,8 @@ export class CartComponent implements OnInit, OnDestroy {
       } else {
         alert(res?.message);
       }
+    }, (error) => {
+      alert(error?.error);
     });
   }
 }

@@ -1,0 +1,49 @@
+[{
+  "_id": {
+    "$oid": "643180f7efc4133eb31ad999"
+  },
+  "productName": "Laptop",
+  "category": "Electronics",
+  "quantity": 65,
+  "price": 50000
+},{
+  "_id": {
+    "$oid": "64318443efc4133eb31ad99a"
+  },
+  "productName": "Mobile",
+  "category": "Electronics",
+  "quantity": 34,
+  "price": 10000
+},{
+  "_id": {
+    "$oid": "64318443efc4133eb31ad99b"
+  },
+  "productName": "Smart Watch",
+  "category": "Electronics",
+  "quantity": 90,
+  "price": 5000
+},{
+  "_id": {
+    "$oid": "64318443efc4133eb31ad99c"
+  },
+  "productName": "T-Shirt",
+  "category": "Cloths",
+  "quantity": 23,
+  "price": 500
+},{
+  "_id": {
+    "$oid": "64318443efc4133eb31ad99d"
+  },
+  "productName": "Travel Bag",
+  "category": "Luggage",
+  "quantity": 36,
+  "price": 2000
+},{
+  "_id": {
+    "$oid": "64318443efc4133eb31ad99e"
+  },
+  "productName": "Shoes",
+  "category": "Lifestyle",
+  "quantity": 0,
+  "price": 699
+}]
